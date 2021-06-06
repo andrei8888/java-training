@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class LCDMain {
+    static int width=3,height=2;
     static String[] firstRow={
             " _ ",  //0
             "   ",  //1
@@ -43,13 +44,19 @@ public class LCDMain {
             "|_|",  //8
             " _|",  //9
     };
+
+
     public static void main(String[] args) throws IOException {
         Scanner scanner=new Scanner(new BufferedReader(new FileReader("./_test_files/in/input_number.txt")));
         int n=scanner.nextInt();
         String[] text={"","",""};
+
+        if(width!=1){
+
+        }
         String strNum = "" + n;
         int strLength = strNum.length(),digit;
-        for (int i = 0; i < strLength; ++i) {
+        for (int i = 0; i < strLength; i++) {
             digit = Integer.parseInt(String.valueOf(strNum.charAt(i)));
             text[0]+=firstRow[digit];
             text[1]+=secondRow[digit];
