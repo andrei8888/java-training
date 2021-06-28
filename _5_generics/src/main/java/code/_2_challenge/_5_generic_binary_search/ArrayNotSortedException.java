@@ -4,4 +4,8 @@ public class ArrayNotSortedException extends Exception {
     public ArrayNotSortedException(String message) {
         super(message);
     }
+
+    public ArrayNotSortedException() {
+        super();
+    }
 }
