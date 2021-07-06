@@ -1,4 +1,4 @@
-package code._3_in_class.ch2;
+package code._3_in_class.ch4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
