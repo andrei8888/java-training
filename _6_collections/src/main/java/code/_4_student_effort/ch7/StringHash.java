@@ -1,13 +1,11 @@
 package code._4_student_effort.ch7;
 
-import java.util.Arrays;
-
 public class StringHash implements MyHashTable<String,String> {
-    Pair[] pairs;
+    PairStrings[] pairs;
     int size;
 
     public StringHash(){
-        pairs=new Pair[10];
+        pairs=new PairStrings[10];
         size=0;
     }
 
@@ -24,7 +22,7 @@ public class StringHash implements MyHashTable<String,String> {
 
     @Override
     public void put(String key, String value) {
-        pairs[size]=new Pair(key,value);
+        pairs[size]=new PairStrings(key,value);
         size++;
     }
 

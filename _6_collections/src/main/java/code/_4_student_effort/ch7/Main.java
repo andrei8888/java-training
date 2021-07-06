@@ -8,5 +8,11 @@ public class Main {
         myHashTable.put("key3","value3");
         myHashTable.remove("key2");
         System.out.println(myHashTable);
+
+        MyHashTable<String,Integer> asd=new GenericHash<>();
+        asd.put("key1",2);
+        asd.put("key2",3);
+        asd.put("key3",420);
+        System.out.println(asd);
     }
 }

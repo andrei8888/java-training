@@ -1,10 +1,10 @@
 package code._4_student_effort.ch7;
 
-public class Pair {
+public class PairStrings {
     private String key;
     private String value;
 
-    public Pair(String key, String value) {
+    public PairStrings(String key, String value) {
         this.key = key;
         this.value = value;
     }
