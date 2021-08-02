@@ -1,4 +1,4 @@
-public class PizzaCreator {
+public class PizzaCreatorMain {
     public static void main(String[] args) {
         PizzaMenu pizza1=new PizzaMenuBuilder(Dough.Thick)
                 .addTopping(Toppings.Mushrooms)
